@@ -32,11 +32,15 @@
   --main-color: red;
   --main-font-color: #000;
   --main-dark-color: #000;
+  --white-font-color: #fff;
+  --luxury-font-color: #a98962;
   --section-bg-color: #fff;
   --placeholder-color: #e9e9e9;
 
+  --heading-font-family: Roboto, Arial, Helvetica, sans-serif;
+
   font-size: 14px;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-family: var(--heading-font-family);
 }
 
 h1,
@@ -48,6 +52,84 @@ h6 {
   font-family: Oranienbaum, "Times New Roman", Times, serif;
 }
 
+.text_luxury {
+  color: var(--luxury-font-color);
+  text-decoration: underline;
+}
+
 body.page-background {
   background-color: var(--main-dark-color);
+}
+
+/* Header */
+.header {
+  font-family: var(--heading-font-family);
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-image: url(../images/bg-main.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.header_dark {
+  color: var(--white-font-color);
+}
+
+.header_dark a {
+  color: inherit;
+  font: inherit;
+}
+
+/* Social */
+.social__link {
+  display: block;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+}
+
+.social__item + .social__item {
+  margin-left: 10px;
+}
+
+.social__icon {
+  background-repeat: no-repeat;
+  background-position: -3px -1px;
+}
+
+.social__icon:hover {
+  background-position: -3px -26px;
+}
+
+.social__icon_instagram {
+  background-image: url("../images/1438557260_inst_4.png");
+}
+
+.social__icon_facebook {
+  background-image: url("../images/1438557245_ab_4.png");
+}
+
+.social__icon_vkontakte {
+  background-image: url("../images/1438423986_vk_3.png");
+}
+
+/* Promo */
+
+.promo {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .promo {
+    text-align: left;
+  }
+}
+
+.promo__logo {
+  display: inline-block;
 }
