@@ -30,8 +30,8 @@
 :root {
   /* Variables */
   --main-color: red;
-  --main-font-color: #000;
   --main-dark-color: #000;
+  --main-font-color: #303030;
   --white-font-color: #fff;
   --luxury-font-color: #a98962;
   --section-bg-color: #fff;
@@ -52,7 +52,8 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font-family);
-  color: #303030;
+  color: var(--main-font-color);
+  text-transform: uppercase;
 }
 
 .text_luxury {
@@ -62,16 +63,18 @@ h6 {
 
 body.page-background {
   background-color: var(--main-dark-color);
+  color: var(--white-font-color);
 }
 
 /* Section */
 
 .section {
-  padding: 40px 0;
+  padding: 30px 0 75px;
 }
 
 .section_light {
   background-color: var(--section-bg-color);
+  color: var(--main-font-color);
 }
 
 .section_new {
@@ -264,9 +267,20 @@ body.page-background {
 
 /* Steps */
 
+.steps__list {
+  margin: 0 20px;
+}
+
 .steps__item {
   display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 560px) {
+  .steps__item {
+    flex-direction: row;
+  }
 }
 
 .steps__image {
@@ -274,8 +288,19 @@ body.page-background {
   margin-right: 20px;
 }
 
-.clearfix1:after {
-  display: table;
-  content: " ";
-  clear: both;
+/* Footer */
+
+.main-footer {
+  padding: 30px 0;
+}
+
+.main-footer,
+.main-footer a {
+  color: var(--white-font-color);
+}
+
+.button-top {
+  border: 1px solid var(--white-font-color);
+  color: var(--white-font-color);
+  background-color: transparent;
 }
