@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -277,13 +281,52 @@
                     </td>
                   </tr>
                   <tr>
-                    <td></td>
+                    <td><span class="sr-only">Перейти к заказу</span></td>
                     <td><a class="btn btn-dark" href="#">Заказать</a></td>
                     <td><a class="btn btn-dark" href="#">Заказать</a></td>
                     <td><a class="btn btn-dark" href="#">Заказать</a></td>
                   </tr>
                 </tbody>
               </table>
+
+              <ul
+                id="img-gallery"
+                class="
+                  gallery
+                  list-unstyled
+                  d-flex
+                  flex-wrap
+                  justify-content-between
+                "
+              >
+                <li class="gallery__item">
+                  <a
+                    href="/images/book-1.png"
+                    data-fancybox="gallery"
+                    data-caption="Наша книга отличная!"
+                  >
+                    <img src="/images/book-1.png" alt="" />
+                  </a>
+                </li>
+                <li class="gallery__item">
+                  <a
+                    href="/images/book-2.png"
+                    data-fancybox="gallery"
+                    data-caption="А эта книга еще лучше!"
+                  >
+                    <img src="/images/book-2.png" alt="" />
+                  </a>
+                </li>
+                <li class="gallery__item">
+                  <a
+                    href="/images/book-3.jpg"
+                    data-fancybox="gallery"
+                    data-caption="Третья книга лучше первых двух, при условии, что вы прочли первые 2"
+                  >
+                    <img src="/images/book-3.jpg" alt="" />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
@@ -292,6 +335,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
