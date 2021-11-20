@@ -7,22 +7,17 @@
     <title>Glamurnenko | Услуги личного стилиста</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- SEO теги -->
-    <meta name="keywords" content="some keywords" />
-    <meta name="description" content="Description of site" />
-    <!--[if lt IE 9]-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-    <!--[endif]-->
   </head>
   <body class="page-background">
-    <div class="container">
-      <div class="row">
-        <header class="col-12 header header_dark">
+    <header class="header header_dark">
+      <div class="container">
+        <div class="row">
           <!-- Меню навигации -->
-          <nav class="navbar navbar-expand-lg navbar-dark text-uppercase">
+          <nav
+            class="navbar navbar-expand-lg navbar-dark text-uppercase col-12"
+          >
             <button
-              class="navbar-toggler float-right"
+              class="navbar-toggler ml-auto"
               type="button"
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
@@ -99,10 +94,14 @@
               </ul>
             </div>
           </nav>
+        </div>
 
-          <!-- Promo -->
-          <section class="promo row">
-            <div class="col-md-4 col-sm-12">
+        <h1 class="sr-only">Услуга личного стилиста</h1>
+
+        <!-- Promo -->
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <section class="promo">
               <img
                 src="/images/logo-new.png"
                 alt="Glamurnenko логотип"
@@ -114,11 +113,74 @@
                   >Миллион красиво одетых женщин</span
                 >
               </b>
-            </div>
-          </section>
-        </header>
+            </section>
+          </div>
+        </div>
       </div>
-    </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="section section_light section_new text-center">
+          <div class="row">
+            <div class="col-sm-10 offset-sm-1">
+              <h2>Скорая стильная помощь</h2>
+
+              <p class="text-uppercase">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolorum vitae id, fuga corrupti impedit necessitatibus
+                perferendis, voluptate, incidunt praesentium quod laboriosam
+                placeat libero. Corrupti voluptatibus perspiciatis quis
+                voluptatem debitis. Reprehenderit.
+              </p>
+            </div>
+            <figure class="col-12">
+              <img
+                src="/images/form-reservation-bigcolor.jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <figcaption>Описание картинки</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="section section_light">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2>Как все происходит</h2>
+              <ol class="list-unstyled">
+                <li>
+                  После оплаты мы подключаем вас в Telegram с нашим стилистом
+                </li>
+                <li>
+                  Подключение происходит в рабочее время: ПН-ПТ с 10 до 19 МСК
+                </li>
+                <li>Сразу же вы можете писать свои вопросы</li>
+                <li>
+                  Ответы буду в пределах часа в рабочее время: ПН-ПТ с 10 до 19
+                  МСК
+                </li>
+                <li>
+                  Если вы не получаете ответ в течении часа, мы продлеваем время
+                  действия услуги на 24 часа.
+                </li>
+              </ol>
+              <dl>
+                <dt>А если нужна помощь в выходной день?</dt>
+                <dd>
+                  Напишите об этом как можно раньше, но не менее, чем за 24
+                  часа. Получите подтверждение стилиста. Если вы отправляетесь,
+                  к примеру, на шопинг в выходной день и вам нужно, чтобы
+                  стилист был с вами на связи, такой вариант возможен по
+                  предварительной договоренности со стилистом.
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
