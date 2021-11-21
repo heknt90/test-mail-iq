@@ -40,7 +40,7 @@
   --heading-font-family: Oranienbaum, "Times New Roman", Times, serif;
   --base-font-family: Roboto, Arial, Helvetica, sans-serif;
 
-  font-size: 14px;
+  font-size: 18px;
   font-family: var(--base-font-family);
   color: #2c2c2c;
 }
@@ -244,8 +244,69 @@ body.page-background {
 
 /* Table */
 
+@media (max-width: 768px) {
+  .table-plans,
+  .table-plans * {
+    display: block;
+  }
+
+  .table-plans th:first-child {
+    display: none;
+  }
+
+  .table-plans tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .table-plans tr > td:first-child {
+    width: 100%;
+    text-align: center;
+  }
+
+  .table-plans td:not(:first-child),
+  .table-plans th:not(:first-child) {
+    flex: 30% 1;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+
+  .table-plans,
+  .table-plans .btn {
+    font-size: 14px;
+  }
+
+  .table-plans .table-buttons td:first-child {
+    display: none;
+  }
+
+  .table-plans .table-buttons td:not(:first-child) {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}
+
+@media (max-width: 400px) {
+  .table-plans small {
+    font-size: 2vw;
+  }
+}
+
 .table_bright {
   background-color: #fff000;
+}
+
+.table_formated td:not(:first-child),
+.table_formated th:not(:first-child) {
+  width: 20%;
+  text-align: center;
+}
+
+.table_text-bold td,
+.table_text-bold th,
+.table_text-bold small {
+  font-weight: bold;
 }
 
 .table_bright td,
@@ -369,4 +430,21 @@ body.page-background {
   border: 1px solid var(--white-font-color);
   color: var(--white-font-color);
   background-color: transparent;
+}
+
+.list_inner > li {
+  margin-bottom: 1.6em;
+}
+
+/* FAQ */
+
+.faq__question {
+  font-weight: 400;
+  margin-bottom: 1.6em;
+}
+
+.faq__answer {
+  display: inline-block;
+  margin-left: 3.7em;
+  line-height: 1.5;
 }
