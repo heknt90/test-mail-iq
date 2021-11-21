@@ -490,7 +490,7 @@ body.page-background {
 
 .button-top {
   border: 1px solid var(--white-font-color);
-  color: var(--white-font-color);
+  color: var(--white-font-color) !important;
   background-color: transparent;
   text-transform: uppercase;
   font-size: 0.8em;
