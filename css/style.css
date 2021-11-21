@@ -45,6 +45,10 @@
   color: #2c2c2c;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -161,6 +165,25 @@ body.page-background {
 .header_dark a {
   color: inherit;
   font: inherit;
+}
+
+.navbar.navbar_fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--main-dark-color);
+  z-index: 100;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding-top: 3rem;
+  }
+
+  .navbar.navbar_fixed {
+    padding: 0 20px;
+  }
 }
 
 .site-navigation {
