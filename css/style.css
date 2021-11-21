@@ -96,7 +96,7 @@ body.page-background {
 
 @media (max-width: 768px) {
   .section {
-    padding: 10px 0;
+    padding: 10px;
   }
 }
 
@@ -174,13 +174,6 @@ body.page-background {
 @media (max-width: 992px) {
   .menu {
     text-align: center;
-    /* background-col
-    or: #000; */
-    /* position: absolute;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    z-index: 10; */
   }
 }
 
@@ -188,7 +181,6 @@ body.page-background {
 .social__list {
   flex-direction: row;
   justify-content: center;
-  /* margin-left: 40px; */
 }
 
 .social__link {
@@ -236,7 +228,6 @@ body.page-background {
   .promo {
     padding-top: 30%;
     padding-bottom: 59%;
-    /* height: 659px; */
     text-align: left;
   }
 }
@@ -339,7 +330,6 @@ body.page-background {
 /* Currency */
 .currency-item {
   display: inline-block;
-  /* padding: 5px; */
   width: 20px;
   height: 20px;
   font-size: 12px;
@@ -377,14 +367,20 @@ body.page-background {
   font-size: 1.3em;
 }
 
-@media (max-width: 400px) {
-  .cases__title {
-  }
-}
-
 .cases__text {
   text-align: left;
 }
+
+@media (max-width: 400px) {
+  .cases__title {
+    font-size: 1em;
+  }
+
+  .cases__text {
+    font-size: 0.8em;
+  }
+}
+
 /* Price */
 
 .price {
@@ -448,6 +444,13 @@ body.page-background {
 .main-footer {
   padding: 90px 0 30px;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .main-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .main-footer,
