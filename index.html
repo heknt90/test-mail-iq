@@ -175,11 +175,12 @@
 
         <section class="section section_light">
           <div class="row">
-            <div class="col-sm-12 col-md-6 offset-md-3">
+            <div class="col-sm-12 col-md-7 offset-md-3">
               <h2 class="heading">Как все происходит</h2>
-              <ol class="list-unstyled">
+              <ol class="list-unstyled list_inner">
                 <li>
-                  После оплаты мы подключаем вас в Telegram с нашим стилистом
+                  После оплаты мы подключаем вас в наш Telegram с нашим
+                  стилистом
                 </li>
                 <li>
                   Подключение происходит в рабочее время: ПН-ПТ с 10 до 19 МСК
@@ -194,9 +195,11 @@
                   действия услуги на 24 часа.
                 </li>
               </ol>
-              <dl>
-                <dt>А если нужна помощь в выходной день?</dt>
-                <dd>
+              <dl class="faq">
+                <dt class="faq__question">
+                  А если нужна помощь в выходной день?
+                </dt>
+                <dd class="faq__answer">
                   Напишите об этом как можно раньше, но не менее, чем за 24
                   часа. Получите подтверждение стилиста. Если вы отправляетесь,
                   к примеру, на шопинг в выходной день и вам нужно, чтобы
@@ -208,7 +211,16 @@
           </div>
           <div class="row my-4">
             <div class="col-md-10 offset-md-1">
-              <table class="table table-bordered table_bright">
+              <table
+                class="
+                  table
+                  table-bordered
+                  table_bright
+                  table_formated
+                  table_text-bold
+                  table-plans
+                "
+              >
                 <thead>
                   <tr class="table__row_higlight">
                     <th>Вы получаете</th>
@@ -239,8 +251,13 @@
                       <span class="sr-only">Нет</span>
                       <i class="bi-dash"></i>
                     </td>
-                    <td>2,5 месяца имиджмейкером команды Гламуренко.ру</td>
-                    <td>2,5 месяца лично Екатериной Маляровой</td>
+                    <td>
+                      2,5 месяца
+                      <small>имиджмейкером команды Гламуренко.ру</small>
+                    </td>
+                    <td>
+                      2,5 месяца <small> лично Екатериной Маляровой</small>
+                    </td>
                   </tr>
                   <tr>
                     <td>Тренажер по стилевым типажам</td>
@@ -303,7 +320,7 @@
                       </ul>
                     </td>
                   </tr>
-                  <tr>
+                  <tr class="table-buttons">
                     <td><span class="sr-only">Перейти к заказу</span></td>
                     <td><a class="btn btn-dark" href="#">Заказать</a></td>
                     <td><a class="btn btn-dark" href="#">Заказать</a></td>
@@ -331,7 +348,11 @@
                     data-fancybox="gallery"
                     data-caption="Наша книга отличная!"
                   >
-                    <img src="images/book-1.png" alt="" />
+                    <img
+                      class="gallery__image"
+                      src="images/book-1.png"
+                      alt=""
+                    />
                   </a>
                 </li>
                 <li class="gallery__item">
@@ -340,7 +361,11 @@
                     data-fancybox="gallery"
                     data-caption="А эта книга еще лучше!"
                   >
-                    <img src="images/book-2.png" alt="" />
+                    <img
+                      class="gallery__image"
+                      src="images/book-2.png"
+                      alt=""
+                    />
                   </a>
                 </li>
                 <li class="gallery__item">
@@ -349,7 +374,11 @@
                     data-fancybox="gallery"
                     data-caption="Третья книга лучше первых двух, при условии, что вы прочли первые 2"
                   >
-                    <img src="images/book-3.jpg" alt="" />
+                    <img
+                      class="gallery__image"
+                      src="images/book-3.jpg"
+                      alt=""
+                    />
                   </a>
                 </li>
               </ul>
@@ -359,18 +388,11 @@
 
         <section class="section section_light text-center">
           <h2>Пакеты услуг</h2>
-          <ul
-            class="
-              list-unstyled
-              d-flex
-              flex-wrap
-              justify-content-around
-              cases__list
-            "
-          >
+          <ul class="list-unstyled cases__list">
             <li class="cases__item">
               <h3 class="cases__title text-center">
-                <small class="d-block">Пакет</small> "Попробовать"
+                <small class="d-block">Пакет</small>
+                <span class="text_quotes">Попробовать</span>
               </h3>
               <p class="cases__text">
                 <span class="d-block">Срок:</span> <b>в пределах 24 часов</b>
@@ -388,7 +410,8 @@
 
             <li class="cases__item">
               <h3 class="cases__title text-center">
-                <small class="d-block">Пакет</small> "1 день"
+                <small class="d-block">Пакет</small>
+                <span class="text_quotes">1 день</span>
               </h3>
               <p>
                 <span class="d-block">Срок:</span> <b>в пределах 24 часов</b>
@@ -406,7 +429,8 @@
 
             <li class="cases__item">
               <h3 class="cases__title text-center">
-                <small class="d-block">Пакет</small> "1 месяц"
+                <small class="d-block">Пакет</small>
+                <span class="text_quotes">1 месяц</span>
               </h3>
               <p>
                 <span class="d-block">Срок:</span> <b>в пределах 24 часов</b>
@@ -482,11 +506,7 @@
     </main>
 
     <footer class="container main-footer">
-      <div class="row text-center">
-        <div class="col-12 mb-4">
-          <a href="#start" class="btn button-top">Наверх</a>
-        </div>
-      </div>
+      <a href="#start" class="btn button-top position-centered">Наверх</a>
       <ul class="list-unstyled mb-0">
         <li><a href="#">Вакансии</a></li>
         <li><a href="#">Карта сайта</a></li>
