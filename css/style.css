@@ -67,7 +67,6 @@ h6 {
 }
 
 .description {
-  font-size: 1rem;
   line-height: 1.82;
   margin-bottom: 0.555555556em;
 }
@@ -175,27 +174,40 @@ body.page-background {
   z-index: 100;
 }
 
-@media (min-width: 55em) {
+@media (min-width: 768px) {
   .navbar {
     padding-top: 3rem;
   }
 
   .navbar.navbar_fixed {
+    max-width: 53.333333333em;
+    margin-right: auto;
+    margin-left: auto;
     padding: 0 1.1111111em;
-    max-width: 55em;
-    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar.navbar_fixed {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar.navbar_fixed {
+    max-width: 1140px;
   }
 }
 
 .site-navigation {
-  font-size: 1rem;
+  margin-left: -0.83333333333em;
 }
 
 .site-navigation .site-navigation__item .site-navigation__link {
   color: var(--white-font-color);
 }
 
-@media (max-width: 55em) {
+@media (max-width: 66em) {
   .menu {
     text-align: center;
   }
@@ -238,6 +250,12 @@ body.page-background {
 
 .phones__list {
   margin: 1.111111111em;
+}
+
+@media (min-width: 55em) {
+  .phones__list {
+    margin-right: 0;
+  }
 }
 
 /* Promo */
